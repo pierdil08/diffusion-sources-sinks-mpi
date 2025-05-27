@@ -6,15 +6,11 @@ This project solves a 2D steady-state diffusion equation with internal sources a
 
 The elliptic PDE solved is:
 
-\[
-\nabla^2 u = \frac{10\lambda}{\sqrt{\pi}} e^{-\lambda^2((x-1)^2+y^2)} - \frac{10\lambda}{\sqrt{\pi}} e^{-\lambda^2((x+1)^2+y^2)}
-\]
+Δ²u = (10λ / √π) * exp(–λ²((x–1)² + y²)) – (10λ / √π) * exp(–λ²((x+1)² + y²))
 
 Subject to boundary conditions:
 
-\[
-\frac{\partial u}{\partial x}(\pm2, y) = 0, \quad u(x, \pm1) = 0
-\]
+∂u/∂x(±2, y) = 0,  u(x, ±1) = 0
 
 where:
 - `λ` controls the width of the source/sink peaks
